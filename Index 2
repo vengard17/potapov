@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="style.css" />
+<title>страница</title>
+</head>
+<body>
+<img src="1.jpg" alt="фото">
+<div class="pasport">
+<h1 id="name">Имя:</h1>
+<h1 id="surname">Фамилия:</h1>
+</div>
+
+
+<p class="text">Ваше имя:</p>
+<p id="name_new"><input type="text" /></p>
+<p class="text">Ваша фамилия:</p>
+<p id="surname_new"><input type="text" /></p>
+<button id="button">ОК</button>
+
+<script>
+document.getElementById("button").addEventListener("click", Hello);
+
+function Hello() {
+let name_n = document.getElementsByTagName("input")[0].value;
+document.getElementById("name").innerHTML = "Имя:" + name_n;
+let surname_n = document.getElementsByTagName("input")[1].value;
+document.getElementById("surname").innerHTML = "Фамилия:" + surname_n;
+}
+</script>
+<style>
+    body {
+font-family: Tahoma, serif;
+}
+.pasport {
+border: 2px solid blue;
+width: 500px;
+}
+.text {
+font-size: 25px;
+color:hotpink ;
+}
+h1 {
+color: green;
+}
+#name:hover {
+color:lawngreen;
+}
+#surname:hover {
+color: blueviolet;
+}
+</style>
+</body>
+</html>
