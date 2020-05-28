@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Максимум</title>
+</head>
+<body>
+   <script>
+       let msg = ''
+       function max (d, e)
+       {
+           return d>e ? d:e;
+        }
+
+       if(confirm('На данной странице у Вас есть возможность определить максимум двух чисел: d и e. Приступим?'))
+       {
+        var d = prompt('Значение d','Введите сюда значение d' );
+        var e = prompt('Значение e','Введите сюда значение e' );
+        msg = msg + "Максимум = " + max (d, e)
+       }
+       msg = msg + "\n" + "Спасибо, что воспользовались нашими услугами"
+       alert (msg)
+
+    </script>
+</body>
+</html>
+© 2020 GitHub, Inc.

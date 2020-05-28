@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Подтверждение возраста</title>
+</head>
+<body>
+   <script>
+       var answer = true;
+       if (confirm('Доброго времени суток, у данной страницы есть к Вам вопрос Вы готовы ответить?')){
+           while (answer)
+           {
+               let age = prompt ('Сколько Вам лет?','Введите сюда Ваш возраст');
+               if (confirm("Ваш возраст -"+age+ "лет?")){
+                   alert ("Спасибо, что уделили время")
+                   answer = false
+               }
+           }
+       }
+    </script>
+</body>
+</html>

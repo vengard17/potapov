@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Дискриминант</title>
+</head>
+<body>
+   <script>
+       let msg = ''
+       function calcD (a, b, c)
+       {
+           return b*b-4*a*c
+        }
+
+       if(confirm('На данной странице у Вас есть возможность посчитать дискриминант выражения: b*b-4*a*c. Приступим?'))
+       {
+        var a = prompt('Значение а','Введите сюда значение а' );
+        var b = prompt('Значение b','Введите сюда значение b' );
+        var c = prompt('Значение c','Введите сюда значение c' );
+        msg = msg + "Дискриминант = " + calcD (a, b, c)
+       }
+       msg = msg + "\n" + "Спасибо, что воспользовались нашими услугами"
+       alert (msg)
+    </script>
+</body>
+</html>

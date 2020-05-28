@@ -1,0 +1,23 @@
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Калькулятор</title>
+
+</head>
+
+<body>
+
+
+
+
+<script>
+  var admin; 
+  var name; 
+  name = "YURA";
+  admin = name;
+  alert (admin);
+  
+  
+  
+</script>
+</body>
